@@ -1,0 +1,229 @@
+:root {
+    --color-primary: #4B69FD;
+    --color-secondary: #e3d5ce;
+    --color-tertiary: #C4C4C4;
+    --color-button: #fe652b;
+    --color-button-hover: #e55720;
+    --color-text: #444444;
+    --color-white: #ffffff;
+}
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+/* Banner */
+.header-banner {
+    flex: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0 0;
+}
+
+/* Sección de entrada */
+.input-section {
+    flex: 60%;
+    background-color: var(--color-secondary);
+    border: 1px solid #000;
+    border-radius: 64px 64px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+
+/* Títulos */
+.main-title {
+    font-size: 48px;
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-style: italic;
+    color: var(--color-white);
+}
+
+.section-title {
+    font-family: "Inter", serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Contenedores de entrada y botón */
+.input-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.input-name {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 25px 0 0 25px;
+    font-size: 16px;
+}
+
+.button-container {
+    display: flex; /* Agregado para alinear los botones en la misma línea */
+    gap: 10px; /* Espacio entre los botones */
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px; /* Para dar espacio entre los botones y los elementos previos */
+}
+
+/* Estilos de entrada de texto */
+.input-title {
+    flex: 1;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid #333;
+    border-right: none;
+    border-radius: 25px 0 0 25px;
+    font-family: "Merriweather", serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos de botón */
+button {
+    padding: 15px 30px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    border: 2px solid #000;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.button-add {
+    background-color: var(--color-tertiary);
+    color: var(--color-text);
+    border-radius: 0 25px 25px 0;
+}
+
+.button-add:hover {
+    background-color: #a1a1a1;
+}
+
+/* Listas */
+ul {
+    list-style-type: none;
+    color: var(--color-text);
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.result-list {
+    margin-top: 15px;
+    color: #05DF05;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Botón de sortear título */
+.button-draw {
+    background-color: var(--color-button);
+    color: var(--color-white);
+}
+
+.button-draw img {
+    margin-right: 10px;
+}
+
+.button-draw:hover {
+    background-color: var(--color-button-hover);
+}
+
+/* Estilos del botón "Juego Nuevo" */
+.button-new-game {
+    background-color: var(--color-tertiary);
+    color: var(--color-text);
+}
+
+.button-new-game img {
+    margin-right: 10px;
+}
+
+.button-new-game:hover {
+    background-color: #a1a1a1;
+}
+
+.button-add.invalid {
+    background-color: red;
+    color: white;
+}
+
+
+.button-add.valid {
+    background-color: green;
+    color: white;
+}
+
+
+
+
+
+
+
+
+#listaAmigos {
+    max-height: 100px; /* Limita la altura de la lista */
+    overflow-y: auto;  /* Muestra una barra de desplazamiento si la lista excede la altura */
+    padding: 10px;     /* Espaciado interno para hacer que se vea mejor */
+    border: 1px solid #ccc; /* Borde para que sea más visible */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+
+button {
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    transform: scale(1.05); /* Un pequeño efecto de escalado al pasar el mouse */
+}
+
+
+
+
+
+
+#errorMensaje {
+    color: white;               /* Establece el color del texto a blanco */
+    
+    padding: 10px;              /* Agrega un relleno alrededor del texto */
+    border-radius: 5px;         /* Redondea las esquinas del fondo */
+    font-weight: bold;          /* Hace el texto en negrita */
+    text-align: center;         /* Centra el texto dentro del span */
+    margin-top: 10px;           /* Agrega un espacio superior para separar del contenido cercano */
+    display: none;              /* De forma predeterminada está oculto */
+    font-family: Arial, sans-serif; /* Establece la fuente */
+    font-size: 20px;
+}

@@ -39,4 +39,21 @@ Este es un proyecto propuesto por el curso ORACLE para realizar sorteos de "Amig
    - En la pantalla inicial se puede ver el area de ingreso de nombre
    - un boton llamado añadir
    - 2 botones ocultos llamados sortear amigo y juego nuevo, estos se encuentran cerrados al inicio para mantener la logica del juego.
-   ![Pantalla de ingreso] (assets/pantallaSorteo.png)
+### Pantalla de ingreso
+   ![Pantalla de ingreso](assets/ingresoDeNombre.png)
+   - En esta pantalla se puede ver el funcionamiento de ingreso de nombres, cuando se determina mediante el uso de los ccv un nombre  valido dentro de las  listas el boton de añadir cambiara de color a verde, en caso contrario se colocara de color rojo, impidiendo el ingreso de nombre.
+## Lista de nombres ingresada
+   ![Pantalla Lista Amigos](assets/listaIngreso.png)
+   - Se puede ver claramente la forma en la cual se van a ir colocando los nombres de los amigos ingresados
+   ![Pantalla error colicion de ingreso](assets/nombresColicionados.png)
+   - se implemento una validacion de nombres similares a ingresar, cabe destacar que este sistema aun tiene un fallo, debido a que no se hizo uso de 2 casillas que se encargaran de manejar el area de ingreso de nombres y otro para el area de ingreso para los apellidos, aun asi se puede observar el como se vera para futuras actuallizacaiones.
+## Pantalla de sorteo de amigos
+ ![Pantalla sorteo](assets/pantallaSorteo.png)
+ - podemos observar que se puede elegir un mobre de las listas de amigos ingresados, este se mostrara con color verde
+ - cabe mencionar que este juego tiene la posibilidad de sortear mas de un amigo sin repetir nombres sorteados, vasta con pulsar el boton sortear amigo nuevamente para comprobarlo.
+ - ## Pantalla Juego Nuevo
+   ![Pantalla nuevoJuego](assets/alertaNuevoJuego.png)
+   - cuando pulsamos nuevo juego, se nos notificara por una alerta las posibles concecuencias que pueden suseder una vez que se solicite un nuevo juego.
+   ## Pantalla final, el regreso
+   ![Pantalla inicial](assets/Inicio.png)
+   - cuando pulsemos nuevo juego y aceptemos las concecuencias, los datos se resetearan permitiendo el nuevo conjunto de nombres.

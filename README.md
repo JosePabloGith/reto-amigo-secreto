@@ -34,5 +34,9 @@ Este es un proyecto propuesto por el curso ORACLE para realizar sorteos de "Amig
       - en el area de nuevo juego, se ingresara una opcion para eliminar 1 solo nombre, en caso de que el usuario desee eliminar solo un nombre; para inplementar esto sera necesario agregarle 1d o saber la posicion de cada uno de los elementos ingresados
 
 ##  AREA DE FOTOS DEL PROYECTO
-
-
+   - Funcionamiento del proyecto
+     ![Pantalla inicial](assets/Inicio.png)
+   - En la pantalla inicial se puede ver el area de ingreso de nombre
+   - un boton llamado añadir
+   - 2 botones ocultos llamados sortear amigo y juego nuevo, estos se encuentran cerrados al inicio para mantener la logica del juego.
+   ![Pantalla de ingreso] (assets/pantallaSorteo.png)
